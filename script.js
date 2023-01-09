@@ -52,3 +52,9 @@ function welcome(name) {
     // The return statement stops the execution of a function and returns a value
   }
   console.log(add(5, 4))
+
+  const myFunction = () => {
+    console.log("Hello world, This is an arrow function")
+  }
+
+  myFunction()
