@@ -1,60 +1,20 @@
-// This is a human value
+// document.write("Hello world")
 
-let name = "John"
-var age = 55
-const gender = "Male"
-let programmer = true 
-let experience = null
-let status = undefined
+const test = document.getElementById("test")
 
-console.log("Hello world, This is Javascript")
+test.innerHTML = "Hello world"
 
 
-console.log(gender)
-console.log(experience)
-console.log(status)
 
-console.log(name, age, programmer)
-
-const person = { 
-    height: 67, 
-    weight: 89, 
-}
-
-console.log(person)
-console.log(person.height)
-
-const students = ["John", "Jane", "Grace", "Mark", 33, true]
-
-console.log(students)
-console.log(students[2])
+const getEl = document.querySelectorAll("p.intro")
+document.getElementById("demo").innerHTML = `My first name is ${getEl[0].innerHTML} and my second name is ${getEl[1].innerHTML}`
 
 
-function displaySum(){
-    let a = 20
-    let b = 22
-    
-    let sum = a + b
-    console.log(sum)
-}
+const newItem = document.createElement("h1")
+const headingOne = document.createTextNode("This is H1 text")
 
-displaySum()
+newItem.appendChild(headingOne)
 
-function welcome(name) {
-    console.log("Hey "+""+name+" "+"welcome to PLP");
-  }
-   
-  // Passing arguments
-  welcome("Evans");
+const printToDom = document.getElementById("newElement")
 
-  function add(a, b){
-    return a+b ;
-    // The return statement stops the execution of a function and returns a value
-  }
-  console.log(add(5, 4))
-
-  const myFunction = () => {
-    console.log("Hello world, This is an arrow function")
-  }
-
-  myFunction()
+printToDom.appendChild(newItem)
