@@ -23,3 +23,14 @@ printToDom.appendChild(newItem)
 window.addEventListener("load", () => {
     alert("Dom Content Loaded")
 })
+
+const btn = document.getElementById("tryMe")
+btn.addEventListener("click", () => {
+    document.getElementById("btnEvent").innerHTML = "You have clicked a button"
+})
+
+const hideText = document.getElementById("btnEvent")
+
+hideText.addEventListener("click", () => {
+    document.getElementById("btnEvent").style.display = "none"
+})
