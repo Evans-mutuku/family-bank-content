@@ -18,3 +18,8 @@ newItem.appendChild(headingOne)
 const printToDom = document.getElementById("newElement")
 
 printToDom.appendChild(newItem)
+
+
+window.addEventListener("load", () => {
+    alert("Dom Content Loaded")
+})
